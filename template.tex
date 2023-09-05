@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{geometry}
+\geometry{left=0.5in,right=0.5in,top=0.5in,bottom=0.5in}
+\usepackage[skip=0.25em, indent=2.5em]{parskip}
+\usepackage[none]{hyphenat} % Avoid linebreaks
+\usepackage{hyperref}
+
+% Title format
+\usepackage{titlesec}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\Large}{}{0em}{}[\titlerule \vspace{0pt}]
+\titleformat{\subsection}{\large\bf\sffamily}{}{0em}{}[\vspace{-5pt}]
+
+\begin{document}
+
+%== HEADER =====================
+\noindent
+{\LARGE\scshape $contact.name$}\\
+$contact.job$ \\
+\href{$contact.url$}{$contact.url$} \\
+\href{mailto:$contact.email$}{$contact.email$} \\
+$contact.phone$ \\
+$contact.location.address$, $contact.location.zip$ $contact.location.city$, $contact.location.country$
+
+
+%== EXPERIENCE =================
+$for(experience)$
+\section*{$it.name$}
+$for(it.items)$
+\subsection*{\href{$it.url$}{$it.name$}$if(it.title)$ | $it.title$$endif$}
+$if(it.date)$$it.date.start$ -- $it.date.end$$endif$
+$if(it.date)$$if(it.location)$ | $endif$$endif$
+$if(it.location)$$it.location.city$, {\scshape $it.location.country$}$endif$
+$if(it.description)$
+
+$it.description$
+$endif$
+$if(it.tags)$
+
+Keywords:
+$for(it.tags)$
+    \mbox{\bf\sffamily $it$}$sep$,
+$endfor$
+
+$endif$
+$sep$
+
+$endfor$
+$sep$
+
+$endfor$
+
+
+%== KEYWORDS ===================
+$for(keywords)$
+\section*{$it.name$}
+\begin{sloppypar}
+$for(it.items)$
+    {\bf\sffamily $it.name$}$if(it.description)$:~$it.description$$endif$$sep$ ~ 
+$endfor$
+
+\end{sloppypar}
+$sep$
+
+$endfor$
+
+
+%== LISTS ======================
+$for(lists)$
+\section*{$it.name$}
+\begin{itemize}
+$for(it.items)$
+    \item {\bf\sffamily $it.name$}: $if(it.url)$\href{$it.url$}{$it.description$}$else$$it.description$$endif$
+$endfor$
+\end{itemize}
+$sep$
+
+$endfor$
+\end{document}
