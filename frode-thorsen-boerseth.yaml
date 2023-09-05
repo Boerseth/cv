@@ -1,0 +1,179 @@
+contact:
+  name: Frode Thorsen Børseth
+  date_of_birth: 1992-03-24
+  job: Software developer
+  email: 'frode@boerseth.com'
+  phone: '+47 41 41 70 69'
+  url: 'https://boerseth.com'
+  location:
+    address: Fjordgata 30
+    city: Trondheim
+    country: Norway
+    zip: 7010
+
+experience:
+  - name: Education
+    items:
+      - name: Norwegian University of Science and Technology
+        url: 'http://hdl.handle.net/11250/2561558'
+        location:
+          city: Trondheim
+          country: Norway
+        title: MSc in Physics
+        date:
+          start: 2016-08-22
+          end: 2018-05-31
+        description: |
+          Applied physics, with special interest in numerics and programming. Thesis titled "Solving the Inverse Problem of Electrical Resistivity Tomography by Simulated Annealing"
+        tags:
+          - Physics
+          - Mathematics
+          - Electromagnetism
+          - Numerics
+          - Programming
+      - name: Universitat de València
+        url: 'https://www.uv.es'
+        location:
+          city: Valencia
+          country: Spain
+        title: Erasmus year
+        date:
+          start: 2015-09-14
+          end: 2016-07-01
+      - name: Norwegian University of Science and Technology
+        url: 'https://www.ntnu.no'
+        location:
+          city: Trondheim
+          country: Norway
+        title: BSc in Physics
+        date:
+          start: 2012-08-13
+          end: 2015-06-01
+
+  - name: Profession
+    items:
+      - name: Telenor Software Lab A/S
+        url: 'https://min-sky.no'
+        location:
+          city: Trondheim
+          country: Norway
+        title: Software developer
+        description: |
+          Started on the web-team (TypeScript, Redux) of the service Min Sky. Later joined a small team in rewriting the API of the service Fremkalle (Python, Falcon).
+
+          Transitioned to more generic Min Sky-backend tasks, including statistics collection, feature development, maintenance, and helping customer service solve mysteries. Eventually took on the responsibility for both front- and backend of the internal tool Bifrost (TypeScript, React).
+        date:
+          start: 2019-07-22
+          end: 2023-11-30
+        tags:
+          - Python
+          - Pytest
+          - PostgreSQL
+          - OpenAPI
+          - TypeScript
+          - React
+          - Redux
+      - name: Norwegian University of Science and Technology
+        url: 'https://www.ntnu.no'
+        location:
+          city: Trondheim
+          country: Norway
+        title: Student assistent
+        description: |
+          Assisted in a number of courses in statistics and probability, as well as one in electromagnetic theory. TFY4240 Electromagnetic Theory (spring 2019), TMA4245 Statistics (spring 2015), ST0103 User's course in Statistics (autumn 2014), ST1101 Probability and Statistics (spring 2014)
+        date:
+          start: 2014-01-01
+          end: 2019-06-01
+        tags:
+          - Physics
+          - Mathematics
+          - Statistics
+          - Probability
+          - Python
+
+lists:
+  - name: Projects
+    items:
+      - name: Min Sky
+        description: |
+          Min Sky (titled "Capture" internationally) is Telenor's cloud based backup service, offered to its subscribers for free with unlimited storage, and developed at Telenor Software Lab
+      - name: Bifrost
+        description: |
+          Internal tool of Telenor Software Lab, used by Min Sky customer service, for visualizing user data and resolving common issues
+      - name: Fremkalle
+        description: |
+          Service for developing and receiving photos by mail, integrated tightly with Min Sky
+  - name: Hobbies
+    items:
+      - name: Languages
+        description: Acquiring them and learning about them
+      - name: Music
+        description: Mainly guitar, but also other instruments
+      - name: Dancing
+        description: Chiefly tango
+      - name: Sport
+        description: Strength training, swimming, running
+      - name: Programming
+        description: Exploring new programming languages, solving fun problems
+  - name: Profiles
+    items:
+      - name: Website
+        description: 'boerseth.com'
+        url: 'https://boerseth.com'
+      - name: Blog
+        description: 'frode.xyz'
+        url: 'https://frode.xyz'
+      - name: GitHub
+        description: 'github.com/Boerseth'
+        url: 'https://github.com/Boerseth'
+      - name: LinkedIn
+        description: 'linkedin.com/in/Boerseth'
+        url: 'https://linkedin.com/in/Boerseth'
+      - name: Twitter / x
+        description: 'twitter.com/Boerseth'
+        url: 'https://twitter.com/Boerseth'
+      - name: HackerNews
+        description: 'news.ycombinator.com/user?id=boerseth'
+        url: 'https://news.ycombinator.com/user?id=boerseth'
+      - name: reddit
+        description: 'reddit.com/user/boerseth'
+        url: 'https://old.reddit.com/user/boerseth'
+
+keywords:
+  - name: Natural Languages
+    items:
+      - name: Norwegian
+        description: Native
+      - name: English
+        description: Near-native
+      - name: Spanish
+        description: Proficient
+      - name: French
+        description: Good
+      - name: Latin
+        description: Good
+      - name: Esperanto
+        description: Good
+  - name: Programming Languages
+    items:
+      - name: Python
+        description: High
+      - name: SQL
+        description: Good
+      - name: Bash
+        description: Good
+      - name: TypeScript
+        description: Good
+      - name: LaTeX
+        description: Good
+      - name: CommonLisp
+        description: Beginner
+  - name: Technologies
+    items:
+      - name: GNU/Linux
+      - name: Vim
+      - name: Git
+      - name: GitHub
+      - name: Make
+      - name: PNpm
+      - name: Docker
