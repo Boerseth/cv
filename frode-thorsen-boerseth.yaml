@@ -59,9 +59,9 @@ experience:
           country: Norway
         title: Software developer
         description: |
-          Started on the web-team (TypeScript, Redux) of the service Min Sky. Later joined a small team in rewriting the API of the service Fremkalle (Python, Falcon).
+          Started on the web-frontend-team (TypeScript, Redux) of the service Min Sky, but soon moved closer to the backend. Participated in an API rewrite for the service Fremkalle (Python, Falcon), before joining the core Min Sky-backend team in early 2020.
 
-          Transitioned to more generic Min Sky-backend tasks, including statistics collection, feature development, maintenance, and helping customer service solve mysteries. Eventually took on the responsibility for both front- and backend of the internal tool Bifrost (TypeScript, React).
+          Tasked with statistics collection, feature development, maintenance, and helping customer service solve issues. Eventually took on the responsibility for both front- and backend of the internal tool Bifrost (TypeScript, React).
         date:
           start: 2019-07-22
           end: 2023-11-30
@@ -102,7 +102,7 @@ lists:
           Internal tool of Telenor Software Lab, used by Min Sky customer service, for visualizing user data and resolving common issues
       - name: Fremkalle
         description: |
-          Service for developing and receiving photos by mail, integrated tightly with Min Sky
+          Service for developing and receiving photos by mail (now defunct)
   - name: Hobbies
     items:
       - name: Languages
@@ -117,12 +117,12 @@ lists:
         description: Exploring new programming languages, solving fun problems
   - name: Profiles
     items:
-      - name: Website
-        description: 'boerseth.com'
-        url: 'https://boerseth.com'
       - name: Blog
         description: 'frode.xyz'
         url: 'https://frode.xyz'
+      - name: Website
+        description: 'boerseth.com'
+        url: 'https://boerseth.com'
       - name: GitHub
         description: 'github.com/Boerseth'
         url: 'https://github.com/Boerseth'
