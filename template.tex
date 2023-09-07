@@ -3,14 +3,14 @@
 \usepackage[empty]{fullpage}
 \usepackage{geometry}
 \geometry{left=0.5in,right=0.5in,top=0.5in,bottom=0.5in}
-\usepackage[skip=0.25em, indent=2.5em]{parskip}
+\usepackage[skip=0.5em, indent=0em]{parskip}
 \usepackage[none]{hyphenat} % Avoid linebreaks
 \usepackage{hyperref}
 
 % Title format
 \usepackage{titlesec}
-\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\Large}{}{0em}{}[\titlerule \vspace{0pt}]
-\titleformat{\subsection}{\large\bf\sffamily}{}{0em}{}[\vspace{-5pt}]
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\Large}{}{0em}{\vspace{5pt}}[\titlerule \vspace{0pt}]
+\titleformat{\subsection}{\large\bf\sffamily}{}{0em}{\vspace{0pt}}[\vspace{-5pt}]
 
 \begin{document}
 
@@ -29,20 +29,22 @@ $for(experience)$
 \section*{$it.name$}
 $for(it.items)$
 \subsection*{\href{$it.url$}{$it.name$}$if(it.title)$ | $it.title$$endif$}
+{\footnotesize
 $if(it.date)$$it.date.start$ -- $it.date.end$$endif$
 $if(it.date)$$if(it.location)$ | $endif$$endif$
 $if(it.location)$$it.location.city$, {\scshape $it.location.country$}$endif$
-$if(it.description)$
-
-$it.description$
-$endif$
 $if(it.tags)$
 
-Keywords:
+Tags:
 $for(it.tags)$
     \mbox{\bf\sffamily $it$}$sep$,
 $endfor$
 
+$endif$
+}
+$if(it.description)$
+
+$it.description$
 $endif$
 $sep$
 
