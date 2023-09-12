@@ -6,7 +6,8 @@ TARGETS = $(FORMATS:%=cv.%)
 
 all: cv.pdf $(TARGETS)
 
-cv.tex: $(YAML) $(TEMPLATE)
+cv.tex: $(YAML) $(TEMPLATE) validate.py Makefile
+	yq -e -o json $(YAML) | python3 validate.py
 	echo "" | pandoc -t latex --metadata-file=$(word 1, $^) --template=$(word 2, $^) --wrap=preserve > $@
 
 cv.pdf: cv.tex
