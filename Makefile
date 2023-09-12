@@ -1,7 +1,7 @@
 YAML = frode-thorsen-boerseth.yaml
 TEMPLATE = template.tex
 
-FORMATS = markdown_strict html
+FORMATS = markdown markdown_strict html
 TARGETS = $(FORMATS:%=cv.%)
 
 all: cv.pdf $(TARGETS)
@@ -16,4 +16,7 @@ cv.pdf: cv.tex
 	rm -rf .temp
 
 $(TARGETS): cv.%: cv.tex
-	pandoc -f latex -t $* $< > $@
+	pandoc -f latex -t $* $< -o $@
+
+clean: cv.tex cv.pdf $(TARGETS)
+	rm $^
