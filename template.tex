@@ -16,12 +16,18 @@
 
 %== HEADER =====================
 \noindent
-{\LARGE\scshape $contact.name$}\\
-$contact.job$ \\
-\href{$contact.url$}{$contact.url$} \\
-\href{mailto:$contact.email$}{$contact.email$} \\
-$contact.phone$ \\
-$contact.location.address$, $contact.location.zip$ $contact.location.city$, $contact.location.country$
+{\LARGE\scshape $personalia.name$}\\
+$personalia.job$ \\
+\href{$personalia.url$}{$personalia.url$} \\
+\href{mailto:$personalia.email$}{$personalia.email$} \\
+$personalia.phone$ \\
+$personalia.location.address$, $personalia.location.zip$ $personalia.location.city$, $personalia.location.country$
+
+{\hspace{\fill}
+\begin{minipage}{0.95\textwidth}
+    $personalia.summary$
+\end{minipage}
+}
 
 
 %== EXPERIENCE =================
@@ -44,7 +50,11 @@ $endif$
 }
 $if(it.description)$
 
+{\hspace{\fill}
+\begin{minipage}{0.95\textwidth}
 $it.description$
+\end{minipage}
+}
 $endif$
 $sep$
 
