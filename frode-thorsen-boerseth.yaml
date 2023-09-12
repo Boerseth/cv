@@ -1,4 +1,4 @@
-contact:
+personalia:
   name: Frode Thorsen Børseth
   date_of_birth: 1992-03-24
   job: Software developer
@@ -10,46 +10,10 @@ contact:
     city: Trondheim
     country: Norway
     zip: 7010
+  summary: |
+    Four years experience as a back-end developer for a cloud-based back-up app, with some front-end work; Master's in Physics from NTNU; Strengths include Python, physics, statistics, languages
 
 experience:
-  - name: Education
-    items:
-      - name: Norwegian University of Science and Technology
-        url: 'http://hdl.handle.net/11250/2561558'
-        location:
-          city: Trondheim
-          country: Norway
-        title: MSc in Physics
-        date:
-          start: 2016-08-22
-          end: 2018-05-31
-        description: |
-          Applied physics, with special interest in numerics and programming. Thesis titled "Solving the Inverse Problem of Electrical Resistivity Tomography by Simulated Annealing"
-        tags:
-          - Physics
-          - Mathematics
-          - Electromagnetism
-          - Numerics
-          - Programming
-      - name: Universitat de València
-        url: 'https://www.uv.es'
-        location:
-          city: Valencia
-          country: Spain
-        title: Erasmus year
-        date:
-          start: 2015-09-14
-          end: 2016-07-01
-      - name: Norwegian University of Science and Technology
-        url: 'https://www.ntnu.no'
-        location:
-          city: Trondheim
-          country: Norway
-        title: BSc in Physics
-        date:
-          start: 2012-08-13
-          end: 2015-06-01
-
   - name: Profession
     items:
       - name: Telenor Software Lab A/S
@@ -59,9 +23,7 @@ experience:
           country: Norway
         title: Software developer
         description: |
-          Started on the web-frontend-team (TypeScript, Redux) of the service Min Sky, but soon moved closer to the backend. Participated in an API rewrite for the service Fremkalle (Python, Falcon), before joining the core Min Sky-backend team in early 2020.
-
-          Tasked with statistics collection, feature development, maintenance, and helping customer service solve issues. Eventually took on the responsibility for both front- and backend of the internal tool Bifrost (TypeScript, React).
+          I started on the web front-end team (TypeScript, Redux) of the service Min Sky, but soon transitioned to a back-end role to participate in an API rewrite for the service Fremkalle (Python, PostgreSQL), before joining the core Min Sky back-end team in early 2020. Some years later I became responsible for the front- and back-end of the internal tool Bifrost (TypeScript, React).
         date:
           start: 2019-07-22
           end: 2023-11-30
@@ -80,7 +42,7 @@ experience:
           country: Norway
         title: Student assistent
         description: |
-          Assisted in a number of courses in statistics and probability, as well as one in electromagnetic theory. TFY4240 Electromagnetic Theory (spring 2019), TMA4245 Statistics (spring 2015), ST0103 User's course in Statistics (autumn 2014), ST1101 Probability and Statistics (spring 2014)
+          While in university I assisted in a number of courses, on statistics and probability, as well as one in electromagnetic theory: TFY4240 Electromagnetic Theory (spring 2019), TMA4245 Statistics (spring 2015), ST0103 User's course in Statistics (autumn 2014), ST1101 Probability and Statistics (spring 2014)
         date:
           start: 2014-01-01
           end: 2019-06-01
@@ -88,8 +50,46 @@ experience:
           - Physics
           - Mathematics
           - Statistics
-          - Probability
+          - Numerics
           - Python
+
+  - name: Education
+    items:
+      - name: Norwegian University of Science and Technology
+        url: 'http://hdl.handle.net/11250/2561558'
+        location:
+          city: Trondheim
+          country: Norway
+        title: MSc in Physics
+        date:
+          start: 2016-08-22
+          end: 2018-05-31
+        description: |
+          Applied physics, with special interest in numerics and programming. Thesis titled "Solving the Inverse Problem of Electrical Resistivity Tomography by Simulated Annealing"
+        tags:
+          - Physics
+          - Electromagnetism
+          - Mathematics
+          - Numerics
+          - Python
+      - name: Universitat de València
+        url: 'https://www.uv.es'
+        location:
+          city: Valencia
+          country: Spain
+        title: Erasmus year
+        date:
+          start: 2015-09-14
+          end: 2016-07-01
+      - name: Norwegian University of Science and Technology
+        url: 'https://www.ntnu.no'
+        location:
+          city: Trondheim
+          country: Norway
+        title: BSc in Physics
+        date:
+          start: 2012-08-13
+          end: 2015-06-01
 
 lists:
   - name: Projects
@@ -173,7 +173,6 @@ keywords:
       - name: GNU/Linux
       - name: Vim
       - name: Git
-      - name: GitHub
       - name: Make
       - name: PNpm
       - name: Docker
